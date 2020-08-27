@@ -1,0 +1,105 @@
+@import './theme.css';
+
+
+@font-face {
+    font-family: Gilroy;
+    src: url("../Gilroy-FREE/Gilroy-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: bold;
+    src: url("../Gilroy-FREE/Gilroy-ExtraBold.otf") format("opentype");
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    border-radius: 12px;
+    font-family: Gilroy;
+    font-style: normal;
+}
+
+
+.container-boxes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/********HEADER-BOX*************/
+
+.header-box {
+    width: 80%;
+    background-color: darkred;
+    height: 50px;
+}
+
+/********big-phone-box******************/
+
+.big-phone-box {
+    width: 80%;
+    background-color: aquamarine;
+    height: 600px;
+}
+
+
+/************relationz-box*****************/
+
+.relationz-box {
+    width: 80%;
+    background-color: darkorange;
+    height: 600px;
+}
+
+/*************reminder-box*****************/
+
+.reminder-box {
+    width: 80%;
+    background-color: pink;
+    height: 400px;
+}
+
+/**************remember-every-box*************/
+
+.remember-every-box {
+    width: 80%;
+    background-color: seagreen;
+    height: 400px;
+}
+
+/*******************stay-connect****************/
+
+.stay-connect {
+    width: 80%;
+    background-color: sienna;
+    height: 400px;
+}
+
+/*********************review-users************/
+
+.review-users {
+    width: 80%;
+    background-color: slategrey;
+    height: 500px;
+}
+
+/*******************free-trials****************/
+
+.free-trials {
+    width: 80%;
+    background-color: tomato;
+    height: 150px;
+}
+
+
+/****************footer-box*******************/
+
+.footer-box {
+    width: 80%;
+    background-color: khaki;
+    height: 450px;
+}
+

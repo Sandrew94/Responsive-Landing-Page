@@ -1,0 +1,48 @@
+.bg-lightwhite-all {
+    background: #fff;
+}
+
+.bg-orange {
+    background: #F26A36;
+}
+
+.bg-dark-blue {
+    background: #1943EF;
+}
+
+.bg-button {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.bg-light-white {
+    background: #E4F7F2;
+}
+
+.bg-light-celest {
+    background: #64CCE3;
+}
+
+.c-light-green {
+    background: #26C296
+}
+
+.c-light-black {
+    color: #222222;
+}
+
+.c-white {
+    color:#fff;
+}
+
+.c-blue {
+    color: #1943EF;
+}
+
+.c-light-grey {
+    color: #73738D;
+}
+
+.c-dark-grey {
+    color: rgba(34, 34, 34, 0.8);
+}
+
