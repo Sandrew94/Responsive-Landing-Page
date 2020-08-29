@@ -42,6 +42,10 @@
     color: #73738D;
 }
 
+.bg-light-grey {
+    background-color: #73738D;
+}
+
 .c-dark-grey {
     color: rgba(34, 34, 34, 0.8);
 }
