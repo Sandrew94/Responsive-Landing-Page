@@ -69,6 +69,136 @@ html {
     padding: 1rem 2.5rem 1rem 2.5rem;
 }
 
+@media screen and (max-width: 1024px) {
+    .header-box {
+        width: 90%;
+    }
+
+    .svg-container {
+        left: 15rem;
+    }
+
+    .header-menu {
+        width: 65%;
+    }
+
+    .header-menu span {
+        padding-left: 2rem;
+    }
+
+    .botton-blue {
+        margin-left: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .header-box {
+        width: 95%;
+    }
+    .svg-container {
+        left: 23%;
+    }
+
+    .header-menu {
+        font-size: 15px;
+    }
+
+    .button-inside {
+        padding: 0.5rem 2rem 0.5rem 2rem;
+    }
+
+    .padding-modified {
+        padding-left: 1rem;
+    }
+
+    #button-blue-pro {
+        padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .header-box {
+        flex-direction: column;
+        height: 100px;
+        align-items: flex-start;
+    }
+
+    .svg-container {
+        left: 55%;
+    }
+
+    .header-title span {
+        padding-left: 1rem;
+        font-size: 34px;
+    }
+
+    .header-menu span {
+        padding-left: 1rem;
+    }
+
+    #button-blue-pro {
+        font-size: 14px;
+        padding: 10px;
+        width: 80px;
+    }
+
+    .botton-blue {
+        margin-left: 1rem;
+    }
+
+    .header-menu {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .header-box {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;        
+        width: 100%;
+        justify-content: space-around;
+        font-size: 24px;
+        margin-top: 1rem;
+    }
+
+    .header-title span {
+        font-size: 48px;
+    }
+
+    .svg-container {
+        left: 0;
+        top: 5rem;
+        width: 100px;
+        height: 180px;
+    }
+
+    .svg-container circle {
+        cx:0 ;
+        cy:100 ;
+        r: 60;
+        stroke-width: 25;
+    }
+
+    #button-blue-pro {
+        font-size: 20px;
+        padding: 15px;
+        width: 120px;
+    }
+}
+
+
 /********big-phone-box******************/
 
 .big-phone-box {
@@ -194,6 +324,147 @@ html {
     bottom: 7.5rem;
 }
 
+@media screen and (max-width: 1440px) {
+    
+    .input-mail {
+        padding: 1.1rem 60% 1.1rem 1rem;
+    }
+
+    .position-button {
+        left: 36%;
+    }
+
+    .ticks-menu {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .big-phone-box {
+        width: 90%;
+    }
+
+    .position-button {
+        left: 33%;
+    }
+
+    .ticks-menu {
+        width: 100%;
+    }
+    
+}
+    
+@media screen and (max-width: 768px) {
+    .relation-title span { 
+        font-size: 38px;
+    }
+
+    .body-relation span {
+        font-size: 17px;
+    }
+
+    .input-mail {
+        padding: 1.1rem 30% 1.1rem 1rem;
+    }
+
+    .position-button {
+        left: 25%;
+    }
+
+    #button-bigphone {
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 12px;
+    }
+
+    .img-center {
+        width: 330px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .big-phone-box {
+        flex-direction: column;
+        width: 95%;
+        height: 1300px;
+    }
+
+    .relationship {
+        width: 90%;
+        padding-top: 2.5rem;
+    }
+
+    .relation-title span {
+        font-size: 44px;
+    }
+
+    .point-svg-inside img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .body-relation span {
+        font-size: 19px;
+    }
+
+    .input-mail {
+        padding: 1.1rem 60% 1.1rem 1rem;
+    }
+
+    #button-bigphone {
+        font-size: 16px;
+    }
+
+    .position-button {
+        left: 55%;
+    }
+
+    .big-phone-img {
+        margin-top: -6rem;
+    }
+
+    .left-svg {
+        top: 70rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .relation-title span {
+        font-size: 40px ;
+    }
+
+    .body-relation span {
+        font-size: 17px;
+    }
+
+    .input-mail {
+        padding: 1.1rem 50% 1.1rem 1rem;
+    }
+
+    .padding-top-r {
+        padding-top: 2.5rem;
+    }
+
+    .left-svg {
+        top: 300vh;
+    }
+
+    .img-center {
+        width: 280px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .input-mail {
+        padding: 1.1rem 30% 1.1rem 1rem;
+    }
+
+    .position-button {
+        left: 45%;
+    }
+}
+    
 /************relationz-box*****************/
 
 .relationz-box {
@@ -231,6 +502,12 @@ html {
     font-weight: 600;
     font-size: 20px;
     line-height: 150%;
+}
+
+@media screen and (max-width: 425px) {
+    .section-relactionz {
+        flex-direction: column;
+    }
 }
 
 
