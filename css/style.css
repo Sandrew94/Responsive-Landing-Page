@@ -468,11 +468,12 @@ html {
 /************relationz-box*****************/
 
 .relationz-box {
+    margin-top: 5rem;
     width: 80%;
-    height: 900px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .section-relactionz {
@@ -486,20 +487,16 @@ html {
     display: flex;
     align-items: center;    
     margin-right: 8rem;    
-    border-bottom: 3px solid transparent;
-}
-
-.title-section:hover {
     padding-bottom: 1rem;
-    border-radius: 3px;
+    border-bottom: 3px solid transparent;
     border-bottom-color: #1943EF;
-    animation: mymove 5s infinite;
-} 
-
-@keyframes mymove {
-    from {left: 0px;}
-    to {left: 200px;}
-  }
+}
+/* 
+.title-section:hover {
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    
+}  */
 
 .background-icon {
     width: 35px;
@@ -549,12 +546,13 @@ html {
 
 
 .main-menu {
+    border: 0.693056px solid #EAEDF3;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 20%;
-    height: 700px;
+    width: 20%;/* 
+    height: 700px; */
     border-radius: 40px 0 0 40px;
 }
 
@@ -634,6 +632,7 @@ html {
 }
 
 .find-new-task {
+    border: 0.693056px solid #EAEDF3;
     width: 100%;
     height: 90px;
     display: flex;
@@ -666,23 +665,175 @@ html {
     width: 50%;
 }
 
-
-/********************************/
-.presentation-username {
-    background-color: darkgray;
-    width: 95%;
+.button-new-task {
     display: flex;
-    align-self: center;
-    height: 250px;
+    align-items: center;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+#button-time {
+    padding: 0.6rem 2.5rem 0.6rem 2.5rem;
+}
+
+.icon-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.icon-dot {
+    margin-left: 10px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1943EF;
+}
+
+.time-oclock {
+    padding-left: 4rem;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 12px;
 }
 
 
-.upcoming-people-container {
-    background-color: darkgray;
+/********************************/
+.presentation-username {
+    background-image: url('../images/background-svg.svg');
+    background-size: cover; /* DA RIVEDERE*/
     width: 95%;
     display: flex;
     align-self: center;
+    justify-content: space-between;
+    height: 250px;
+    border-radius: 11px;
+    margin-bottom: 3rem;
+}
+
+.presentation-left {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+
+}
+
+.pre-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 23px;
+    padding-bottom: 1rem;
+}
+
+.pre-body {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+}
+
+#button-presentation {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.presentation-right {
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+}
+
+/*********************************/
+
+
+.upcoming-people-container {
+    width: 87%;
+    display: flex;
+    align-self: center;
     height: 350px;
+    justify-content: space-between;
+}
+
+.people-container-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    background: #FFFFFF;
+    box-shadow: 0px 5.54444px 27.7222px rgba(0, 0, 0, 0.05);
+    border-radius: 11.0889px;
+}
+
+.title-left {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 13px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 90%;
+}
+
+
+.columns-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.columns-dimension {
+    display: flex;
+    flex-direction: column;    
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.5rem;
+}
+
+.title-person {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 12px;
+}
+
+.text-right {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(34, 34, 34, 0.6);
+}
+
+.icon-plus-person {
+    display: flex;
+    align-items: center;
+}
+
+
+.rectangle-button {
+    background: rgba(38, 194, 150, 0.1);
+    border-radius: 3px;
+}
+
+#color-send {
+    color: rgba(34, 34, 34, 0.4);
+}
+.send {
+    color: #26C296;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 11px;
 }
 
 
