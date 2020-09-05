@@ -11,6 +11,7 @@ html {
     padding: 0;
     border-radius: 12px;
     font-family: Gilroy;
+    box-sizing: border-box;
 }
 
 
@@ -553,7 +554,8 @@ html {
     margin: 2rem 3rem 1rem 1rem;
 }
 
-.main-list {
+.mainlist {
+    margin-bottom: 1rem;
 }
 
 #overview-class {
@@ -697,10 +699,8 @@ html {
 
 /********************************/
 .presentation-username {
-    /* background: #FF1F1F;
-    box-shadow: inset 0px 6.93056px 27.7222px rgba(0, 0, 0, 0.05); */
-    background-image: url('../images/background-svg.svg');
-    background-size: cover; /* DA RIVEDERE*/ 
+    background-image: url('../images/Group.png');
+    background-size: cover; 
     width: 95%;
     display: flex;
     align-self: center;
@@ -719,15 +719,18 @@ html {
 
 .pre-title {
     font-weight: 600;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 23px;
-    padding-bottom: 1rem;
+    padding-top: 3rem;
+    padding-left: 4rem;
 }
 
 .pre-body {
+    padding-left: 4rem;
     font-weight: 500;
     font-size: 20px;
     line-height: 180%;
+    padding-top: 1rem;
 }
 
 #button-presentation {
@@ -737,7 +740,7 @@ html {
 .presentation-right {
     display: flex;
     align-items: flex-end;
-    padding: 2rem;
+    padding: 2rem 4.5rem;
 }
 
 /*********************************/
@@ -749,16 +752,20 @@ html {
     align-self: center;
     height: 350px;
     justify-content: space-between;
+    position: relative;
+    z-index: 1000;
 }
 
 .people-container-left {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     width: 45%;
     background: #FFFFFF;
     box-shadow: 0px 5.54444px 27.7222px rgba(0, 0, 0, 0.05);
     border-radius: 11.0889px;
+    position: relative;
+    z-index: 999;
 }
 
 .title-left {
@@ -772,6 +779,8 @@ html {
     justify-content: space-between;
     padding: 1rem;
     width: 90%;
+    position: relative;
+    z-index: 998;
 }
 
 
@@ -780,11 +789,15 @@ html {
     justify-content: space-between;
     width: 100%;
     height: 100%;
+    position: relative;
+    z-index: 998;
 }
 
 .columns-dimension {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+    position: relative;
+    z-index: 997;   
 }
 
 .person {
@@ -793,6 +806,8 @@ html {
     flex-direction: column;
     height: 100%;
     padding: 1.5rem;
+    position: relative;
+    z-index: 996; 
 }
 
 .title-person {
@@ -830,16 +845,90 @@ html {
     line-height: 11px;
 }
 
-
 .img-green {
-    
-
+    position: absolute;
+    margin: 15rem 5rem 0;
+    z-index: 0;
 }
-
 
 .img-absolute {
     position: absolute;
 }
+
+@media screen and (max-width: 1440px) {
+    .time-oclock {
+        padding-left: 0;
+    }
+
+    .pre-title {
+        padding-top: 2.5rem;
+        padding-left: 2rem;
+    }
+
+    .presentation-right {
+        padding: 0 3rem 0 0;
+        height: 70%;
+    }
+
+    .pre-body {
+        font-size: 16px;
+        padding-left: 2rem;
+    }
+
+    .img-green {
+        margin: 15rem 3rem 0;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container-button-time {
+        width: 60%;
+    }
+
+    .icon-time {
+        padding-right: 1.5rem;
+    }
+
+    .time-oclock {
+        padding-right: 0.5rem;
+    }
+    .presentation-username {
+        width: 103%;
+        align-self: flex-end;
+    }
+
+    .presentation-right {
+        padding: 0 0.5rem 0 0;
+    }
+
+    .presentation-left {
+        padding: 0.5rem;
+    }
+
+    .pre-body {
+        font-size: 13.5px;
+        padding-left: 3rem;
+    }
+
+    .pre-title {
+        padding-top: 4rem;
+        padding-left: 3rem;
+    }
+    
+    .upcoming-people-container {
+        width: 97%;
+    }
+
+    .people-container-left {
+        width: 49%;
+    }
+
+    .img-green {
+        margin: 15rem 1rem 0;
+    }
+}
+
 
 /*************reminder-box*****************/
 
