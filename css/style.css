@@ -356,6 +356,9 @@ html {
 }
     
 @media screen and (max-width: 768px) {
+    .big-phone-box {
+        width: 95%;
+    }
     .relation-title span { 
         font-size: 38px;
     }
@@ -386,7 +389,6 @@ html {
 @media screen and (max-width: 450px) {
     .big-phone-box {
         flex-direction: column;
-        width: 95%;
         height: 1300px;
     }
 
@@ -524,7 +526,7 @@ html {
     line-height: 150%;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
     .section-relactionz {
         flex-direction: column;
     }
@@ -549,7 +551,7 @@ html {
 }
 
 .main-title {
-    border: 0.693056px solid #EAEDF3;
+    border-bottom: 0.693056px solid #EAEDF3;
     box-sizing: border-box;    
     margin: 2rem 3rem 1rem 1rem;
 }
@@ -856,6 +858,9 @@ html {
 }
 
 @media screen and (max-width: 1440px) {
+    .section-relactionz {
+        margin-left: 5rem;
+    }
     .time-oclock {
         padding-left: 0;
     }
@@ -882,6 +887,18 @@ html {
 
 
 @media screen and (max-width: 1024px) {
+
+    .title-section {
+        margin-right: 5rem;
+    }
+
+    .relationz-box {
+        width: 90%;
+    }
+    
+    .icon-name-hover {
+        padding: 1rem;
+    }
     .container-button-time {
         width: 60%;
     }
@@ -907,7 +924,7 @@ html {
     }
 
     .pre-body {
-        font-size: 13.5px;
+        font-size: 14px;
         padding-left: 3rem;
     }
 
@@ -923,11 +940,214 @@ html {
     .people-container-left {
         width: 49%;
     }
+    
+
+    .title-person {
+        font-size: 15px;
+    }
+
+    .person {
+        padding: 0.5rem;
+    }
 
     .img-green {
         margin: 15rem 1rem 0;
     }
+
+    .mainlist {
+        margin-left: 1rem;
+    }
+
+    
 }
+
+@media screen and (max-width: 768px) {
+
+    .relationz-box {
+        height: 1200px;
+    }
+
+
+    .main-title {
+        border-bottom: 0.693056px solid #EAEDF3;
+    }
+    .box-menu {
+        flex-direction: column;
+    }
+
+    .main-menu {
+        width: 100%;
+        height: 300px;
+        border-radius: 0;
+    }
+
+    .main-list {
+        display: flex;
+        border-bottom: 0.693056px solid #EAEDF3;
+    }
+
+    .icon-name-hover {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    }
+
+    .name-icon {
+        writing-mode: vertical-rl;
+        transform: rotate(-20deg);
+        padding-top: 0.3rem;
+    }
+
+    .mainlist {
+        display: none;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    #name-id {
+        transform: rotate(-90deg);
+        margin-right: -1rem;
+    }
+
+    .logout-list {
+        align-items: unset;
+    }
+
+    .presentation-username {
+        margin-bottom: 0;
+        width: 105.55%;
+    }
+
+    .upcoming-people-container {
+        width: 100%;
+    }
+
+    .img-green {
+        margin: 15rem 2rem 0;
+    }
+
+    .img-absolute {
+        width: 85px;
+        height: 85px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .section-relactionz {
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    .title-section {
+        padding-top: 1rem;
+        margin-right: 7rem;
+    }
+
+    .relationz-box {
+        height: 2350px;
+        justify-content: unset;
+    }
+
+    .main-menu {
+        height: auto;
+    }
+
+    .main-list {
+        flex-direction: column;
+    }
+
+    .title-main {
+        font-size: 40px;
+    }
+
+    .icon-name-hover {
+        flex-direction: row;
+    }
+
+    .name-icon {
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        font-size: 20px;
+    }
+
+    #name-id {
+        transform: rotate(0deg);
+    }
+
+    .logout-list {
+        align-items: center;
+    }
+
+    .icon-list img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .find-new-task {
+        height: 200px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .input-box {
+        width: 85%;
+    }
+
+    .input-research {
+        padding: 0.5rem 50% 0.5rem 1rem;
+    }
+
+    .container-button-time {
+        width: 100%;
+    }
+
+    .presentation-username {
+        height: 500px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: unset;
+        width: 120%;
+        margin-bottom: -5rem;
+    }
+
+    .presentation-left {
+        padding: 3rem 0 0 3rem;
+    }
+
+    .pre-body {
+        font-size: 16px;
+    }
+
+    .presentation-right {
+        height: 20%;
+        padding-left: 4rem;
+    }
+
+
+    .upcoming-people-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .people-container-left {
+        width: 100%;
+        height: 300px;
+        margin-top: 2rem;
+    }
+
+    .img-green {
+        margin: 12rem 1rem 0;
+    }
+
+    .img-absolute {
+        width: 80px;
+        height: 80px;
+    }
+}
+
 
 
 /*************reminder-box*****************/
