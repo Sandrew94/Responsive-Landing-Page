@@ -120,43 +120,7 @@ html {
 
 }
 
-@media screen and (max-width: 450px) {
-    .header-box {
-        flex-direction: column;
-        height: 100px;
-        align-items: flex-start;
-    }
-
-    .svg-container {
-        left: 55%;
-    }
-
-    .header-title span {
-        padding-left: 1rem;
-        font-size: 34px;
-    }
-
-    .header-menu span {
-        padding-left: 1rem;
-    }
-
-    #button-blue-pro {
-        font-size: 14px;
-        padding: 10px;
-        width: 80px;
-    }
-
-    .botton-blue {
-        margin-left: 1rem;
-    }
-
-    .header-menu {
-        font-size: 16px;
-    }
-}
-
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 540px) {
     .header-box {
         height: 300px;
         display: flex;
@@ -198,6 +162,7 @@ html {
         width: 120px;
     }
 }
+
 
 
 /********big-phone-box******************/
@@ -386,7 +351,7 @@ html {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 540px) {
     .big-phone-box {
         flex-direction: column;
         height: 1300px;
@@ -428,6 +393,10 @@ html {
 
     .left-svg {
         top: 70rem;
+    }
+
+    .spunta-plus-text {
+        padding-right: 0.5rem;
     }
 }
 
@@ -1034,16 +1003,18 @@ html {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 540px) {
 
     .section-relactionz {
         margin-top: 0;
         margin-bottom: 2rem;
+        flex-direction: column;
+        margin-left: 7rem;
     }
 
     .title-section {
         padding-top: 1rem;
-        margin-right: 7rem;
+        margin-right: 9rem;
     }
 
     .relationz-box {
@@ -1148,6 +1119,68 @@ html {
     }
 }
 
+@media screen and (max-width: 425px) {
+    .title-section {
+        margin-right: 5rem;
+        
+    }
+
+    .section-relactionz {
+        margin-left: 5rem;
+    }
+
+    .pre-body {
+        padding-right: .5rem;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .title-section {
+        margin-right: 3rem;
+    }
+
+    .section-relactionz {
+        margin-left: 4rem;
+    }
+
+    #button-time {
+        padding: 0.5rem 2rem 0.5rem 2rem;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .title-section {
+        margin-right: 1rem;
+    }
+
+    .section-relactionz {
+        margin-left: 2.5rem;
+    }
+
+    .container-button-time {
+        flex-direction: column;
+        height: 200px;
+        align-items: center;
+    }
+
+    .time {
+        padding-bottom: 1rem;
+    }
+
+    .pre-body {
+        padding-right: 0.5rem;
+    }
+
+    .presentation-right {
+        height: 10%;
+    }
+
+    .img-green {
+        margin: 12rem 0.3rem 0;
+    }
+}
 
 
 /*************reminder-box*****************/
