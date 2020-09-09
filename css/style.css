@@ -1187,9 +1187,117 @@ html {
 
 .reminder-box {
     width: 80%;
-    background-color: pink;
-    height: 400px;
+    height: 850px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+.reminder-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+
+}
+
+.reminder-right {
+    height: 600px;
+}
+
+.reminder-description {
+    position: relative;
+    padding: 1rem 3rem 1rem 2rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
+    border-radius: 16.6333px;
+}
+
+.remi-end {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-reminder {
+    padding-right: 1rem;
+}
+
+.text-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.bold-big {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.green-text {
+    color: #26C296;;
+}
+
+.vector-left-reminder {
+    position: absolute;
+
+}
+
+.svg-container-reminder {
+    position: relative;
+    right: 5rem;
+}
+
+.bell-background {
+    background: #E4F7F2;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-descript {
+    margin-bottom: 5rem;
+}
+
+.title-reminder {
+    margin-top: 4rem;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+
+.body-description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    padding-top: 1.5rem;
+}
+
+
+.list-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+}
+
+#pad-1 {
+    padding-right: 5rem;
+}
+
+#pad-2 {
+    padding-right: 2rem;
+}
+
+.check-little img{
+    padding-right: 0.5rem;
+}
+
 
 /**************remember-every-box*************/
 
