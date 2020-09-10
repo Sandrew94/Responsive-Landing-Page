@@ -1298,6 +1298,143 @@ html {
     padding-right: 0.5rem;
 }
 
+@media screen and (max-width: 1024px) {
+    .reminder-box {
+        width: 90%;
+    }
+
+    .reminder-right {
+        padding: 1.5rem;
+    }
+
+    .reminder-description {
+        margin-top: 2rem;
+        padding: 0.5rem 3rem 0.5rem 2rem;
+    }
+
+    .svg-container-reminder {
+        height: 350px;
+    }
+
+    .svg-container-reminder circle {
+        cy: 205;
+        cx: 125;
+    }
+
+    .svg-container-reminder circle:first-child {
+        r: 90;
+    }
+
+    .svg-container-reminder circle:last-child {
+        r: 60;
+    }
+
+    .container-descript {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .reminder-box {
+        flex-direction: column;
+    }
+
+    .reminder-description {
+        padding: 1rem 3rem 1rem 2rem;
+    }
+
+    .svg-container-reminder circle {
+        cy: 178;
+        cx: 110;
+    }
+
+    .title-reminder {
+        font-size: 33px;
+    }
+
+    .body-description {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .reminder-box {
+        height: 1200px;
+    }
+
+    .svg-container-reminder circle {
+        cy: 200;
+        cx: 130;
+    }
+
+    .reminder-description {
+        padding: 0.5rem 2rem 0.5rem 1rem;
+    }
+
+    .bell {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .title-reminder {
+        font-size: 28px;
+    }
+
+    .body-description {
+        font-size: 20px;
+    }
+
+    #pad-1 {
+        padding-right: 4rem;
+    }
+
+    #pad-2 {
+        padding-right: 1rem;
+    }
+
+    
+    .svg-container-reminder circle {
+        cy: 225;
+        cx: 160;
+    }
+
+    .svg-container-reminder circle:first-child {
+        r: 95;
+    }
+
+    .svg-container-reminder circle:last-child {
+        r: 65;
+    }
+
+    
+    .line-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .check-little {
+        padding-top: 0.5rem;
+    }
+
+}
+
+
+@media screen and (max-width: 320px) {
+    .reminder-box {
+        height: 1400px;
+    }
+
+    .body-description {
+        font-size: 18px;
+    }
+
+    .reminder-description {
+        padding: 0.5rem;
+    }
+}
+
 
 /**************remember-every-box*************/
 
