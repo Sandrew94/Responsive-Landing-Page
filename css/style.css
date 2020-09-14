@@ -1554,7 +1554,7 @@ html {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 540px) {
     .svg-cv-reminder {
         width: 350px;
     }
