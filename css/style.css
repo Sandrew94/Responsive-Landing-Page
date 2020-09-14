@@ -1527,6 +1527,77 @@ html {
     padding: 1rem 2rem 3rem 1rem;
 }
 
+
+@media screen and (max-width: 1024px) {
+    .body-description {
+        font-size: 17px;
+    }
+
+    .container-info span {
+        line-height: 16px;
+    }
+
+    #last-container {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .remember-every-box {
+        width: 90%;
+        flex-direction: column;
+        height: 900px;
+    }
+
+    .remember-left {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .svg-cv-reminder {
+        width: 350px;
+    }
+
+    .svg-cv-reminder circle {
+        cx:250;
+    }
+
+    .remember-every-box {
+        height: 1100px;
+    }
+
+    .body-description {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .svg-cv-reminder {
+        width: 250px;
+    }
+
+    .svg-cv-reminder circle {
+        cx:150;
+    }  
+
+    .title-reminder {
+        margin-top: 2rem;
+    }
+
+    .remember-every-box {
+        height: 1200px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .remember-every-box {
+        height: 1300px;
+    }
+    
+}
+
 /**************************************/
 
 
