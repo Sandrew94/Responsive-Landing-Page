@@ -549,6 +549,7 @@ html {
     font-size: 16px;
     line-height: 11px;
     padding-left: 2rem;
+    padding-top: 0.5rem;
 }
 
 .icon-name-hover {
@@ -1598,17 +1599,285 @@ html {
     
 }
 
-/**************************************/
-
-
-
 
 /*******************stay-connect****************/
 
 .stay-connect {
     width: 80%;
-    background-color: sienna;
-    height: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#stay-box {
+    margin-top: 0;
+    justify-content: space-between;
+}
+
+.content-anxiety {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20.7917px;
+    width: 500px;
+    height: auto;
+    position: relative;
+}
+
+.anxiety-icon {
+    padding-top: 1rem;
+}
+
+.anxiety-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+}
+
+.title-big {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.title-short {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 13px;
+    color: rgba(34, 34, 34, 0.8);
+}
+
+.title-left {
+    display: flex;
+    flex-direction: column;
+    padding-right: 9rem;
+}
+
+
+.anxiety-icon {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-icon-an span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 11px;
+    color: rgba(34, 34, 34, 0.6);
+}
+
+.icon-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+
+.icon-img {
+    padding-right: 0.5rem;
+}
+
+
+.text-name {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 13px;
+    color: rgba(34, 34, 34, 0.8);
+}
+
+
+.anx-desc {
+    padding: 2rem;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    color: rgba(115, 115, 141, 0.8);
+
+}
+
+.anx-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.text-mail {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.check-container {
+    display: flex;
+    align-items: center;
+    padding-right: 9rem;
+    padding-bottom: 0.5rem;
+}
+
+
+/******CHECKBOX*******/
+
+.checkbox-label {
+    display: block;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    clear: both;
+    padding-right: 1rem;
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    border: 2px solid #26C296;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity:1;
+    border: 2px solid #26C296;
+}
+
+
+
+.checkbox-label .checkbox-custom::after {
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 12px;
+    height: 0px;
+    width: 0px;
+    border-radius: 5px;
+    border: solid #26C296;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity:1;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity:1;
+  left: 8px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid #26C296;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+
+
+/* For Ripple Effect */
+.checkbox-label .checkbox-custom::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-radius: 5px;
+    border: 2px solid #26C296;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);    
+}
+
+.checkbox-label input:checked ~ .checkbox-custom::before {
+    left: -3px;
+    top: -3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+    opacity:0;
+    z-index: 999;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+/******Button-right******/
+
+.button-right {
+    padding-bottom: 0.5rem;
+}
+
+#button-anx {
+    border: 0;
+}
+
+#button-anx span {
+    padding: 0.5rem 3rem 0.5rem 3rem;
+}
+
+/*******svg *******/
+
+
+.vector-center-anx {
+    position: absolute;
+    left: 18rem;
+}
+
+.svg-cv-anx {
+    position: relative;
+}
+
+#pad-5 {
+    padding-right: 6rem;
+}
+
+#pad-6 {
+    padding-right: 6rem;
 }
 
 /*********************review-users************/
