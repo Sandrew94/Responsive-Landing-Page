@@ -1375,6 +1375,10 @@ html {
     .bell {
         margin-top: 4rem;
     }
+
+    .reminder-left {
+        margin-top: 8rem;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -1926,14 +1930,23 @@ html {
     .svg-cv-anx circle {
         cx: 160;
     }
-
-    /* #stay-box .remember-left {
-        margin-top: -3rem;
-    } */
 }
 
 
 @media screen and (max-width: 540px) {
+
+    .content-anxiety {
+        width: auto;
+    }
+
+    .svg-cv-anx {
+        width: 250px;
+    }
+
+    .svg-cv-anx circle {
+        cx: 100;
+    }
+
 
     .title-big {
         font-size: 25px;
@@ -1984,6 +1997,34 @@ html {
     
 }
 
+
+@media screen and (max-width: 375px) {
+
+    .stay-connect {
+        height: 1600px;
+    }
+    .title-big {
+        font-size: 22px;
+    }
+
+    .anx-desc {
+        width: 350px;
+    }
+
+    .anx-footer {
+        flex-direction: column;
+    }
+
+    .check-container {
+        padding-bottom: 2.5rem;
+    }
+
+    #button-anx span {
+        padding: 1rem 4rem 1rem 4rem;
+        font-size: 24px;
+    }
+
+}
 
 
 
