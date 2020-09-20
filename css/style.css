@@ -1880,6 +1880,117 @@ html {
     padding-right: 6rem;
 }
 
+@media screen and (max-width: 1440px) {
+    .stay-connect {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .stay-connect {
+        width: 100%;
+    }
+
+    .remember-every-box {
+        width: 90%;
+    }
+
+    .check-container {
+        padding-right: 6rem;
+    }
+
+    #pad-5 {
+        padding-right: 4rem;
+    }
+
+    #pad-6 {
+        padding-right: 3.7rem;
+    }
+
+    .vector-center-anx {
+        left: 0.5rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .stay-connect {
+        height: 1000px;
+    }
+
+    #stay-box {
+        margin-top: 5rem;
+    }
+    
+    .svg-cv-anx circle {
+        cx: 160;
+    }
+
+    /* #stay-box .remember-left {
+        margin-top: -3rem;
+    } */
+}
+
+
+@media screen and (max-width: 540px) {
+
+    .title-big {
+        font-size: 25px;
+    }
+
+    .stay-connect {
+        height: 1400px;
+    }
+
+    .title-left {
+        padding-right: 2rem;
+    }
+
+    .icon-list {
+        flex-direction: column;
+    }
+
+    .text-name {
+        font-size: 22px;
+    }
+
+    .icon-list img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .intro-icon-an {
+        padding: 1rem;
+    }
+
+    .intro-icon-an span {
+        font-size: 26px;
+    }
+
+    .icon-container {
+        padding: 1rem;
+    }
+
+    .anx-desc {
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .check-container {
+        padding-right: 1rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
 /*********************review-users************/
 
 .review-users {
