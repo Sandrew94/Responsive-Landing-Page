@@ -1935,7 +1935,7 @@ html {
 
 @media screen and (max-width: 540px) {
 
-    .content-anxiety {
+    .content-anxiety {        
         width: auto;
     }
 
@@ -1987,18 +1987,23 @@ html {
     }
 
     .anx-desc {
-        width: 400px;
         font-size: 18px;
+        padding: 0.7rem;
+        width: 375px;
     }
 
     .check-container {
-        padding-right: 1rem;
+        padding-right: 0rem;
     }
     
 }
 
 
 @media screen and (max-width: 375px) {
+
+    .title-left {
+        padding-right: 1.3rem;
+    }
 
     .stay-connect {
         height: 1600px;
@@ -2027,7 +2032,19 @@ html {
 }
 
 
+@media screen and (max-width: 320px) {
+    .anx-desc {
+        width: 300px;
+    }
+}
 
+
+
+@media screen and (max-width: 280px) {
+    .anx-desc {
+        width: 260px;
+    }
+}
 
 
 
