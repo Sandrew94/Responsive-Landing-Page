@@ -2179,6 +2179,73 @@ html {
     right: 35rem;
 }
 
+
+@media screen and (max-width: 1024px) {
+    .f2-img {
+        left: 0;
+    }
+
+    .img-f2 img {
+        left: 4rem;
+    }
+
+    .f2-img-right {
+        width: 200px;
+    }
+
+    .points-gress-switch {
+        right: 10rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left-body {
+        display: none;
+    }
+
+    .right-body {
+        display: none;
+    }
+
+    .points-gress-switch {
+        right: 3rem;
+    }
+}
+
+
+@media screen and (max-width:540px) {
+    .review-users {
+        width: 90%;
+        margin-top: -10rem;
+    }
+
+    .points-gress-switch {
+        right: 1rem;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .review-users {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .title-review span {
+        font-size: 23px;
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    .title-review span {
+        font-size: 20px;
+    }
+}
+
+
 /*******************free-trials****************/
 
 .free-trials {
