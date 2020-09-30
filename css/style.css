@@ -2250,10 +2250,63 @@ html {
 
 .free-trials {
     width: 80%;
-    background-color: tomato;
     height: 150px;
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 55.4444px #e1e4e9;
+    border-radius: 40px;
 }
 
+.free-trials-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    position: relative; 
+}
+
+.title-box {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 30px;
+}
+
+
+.title-little {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    padding-top: 0.5rem;
+}
+
+
+.botton-green {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #26C296;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    border-radius: 33.9597px;
+    cursor: pointer;
+}
+
+#button-green-pro {
+    padding: 1.2rem 3.5rem 1.2rem 3.5rem;
+}
+
+.svg-container-trial {
+    position: absolute;
+}
+
+.svg-pos-trail {
+    left: 8rem;
+}
+
+.svg-container-trial circle {
+    cy: 55;
+}
 
 /****************footer-box*******************/
 
