@@ -1211,7 +1211,6 @@ html {
     padding: 1rem 3rem 1rem 2rem;
     display: flex;
     align-items: center;
-    box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
     border-radius: 16.6333px;
 }
 
@@ -2077,7 +2076,6 @@ html {
     flex-direction: column;
     align-items: center;
     background: #FFFFFF;
-    box-shadow: 0px 13px 55.4444px #F2F5FA;
     border-radius: 8.31667px;
 }
 
@@ -2385,7 +2383,44 @@ html {
 
 .footer-box {
     width: 80%;
-    background-color: khaki;
     height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.top-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding-top: 3rem;
+}
+
+.menu-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 150px;
+
+}
+
+
+.title-footer {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 13px;
+    padding-top: 1rem;
+}
+
+.second-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 13px;
+    padding-top: 1.5rem;
+}
+
+#footer-footer {
+    align-items: center;
+    padding-top: 9rem;
+}
