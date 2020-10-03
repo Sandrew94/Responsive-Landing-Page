@@ -2034,6 +2034,7 @@ html {
 @media screen and (max-width: 320px) {
     .anx-desc {
         width: 300px;
+        text-align: justify;
     }
 }
 
@@ -2100,6 +2101,7 @@ html {
 }
 
 .mylady-desc {
+    text-align: justify;
     padding: 0 1rem 0 1rem;
     max-width: 600px;
     font-weight: 500;
@@ -2393,8 +2395,14 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 110%;
     padding-top: 3rem;
+}
+
+.menu-footer-box {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
 }
 
 .menu-footer {
@@ -2423,4 +2431,88 @@ html {
 #footer-footer {
     align-items: center;
     padding-top: 9rem;
+}
+
+
+.vector-center-footer {
+    position: absolute;
+    right: 0;
+}
+
+
+@media screen and (max-width:1024px) {
+   
+    .svg-cv-footer {
+        width: 120px;
+    }
+
+    .svg-cv-footer circle {
+        cy: 270;
+    }
+}
+
+
+@media screen and (max-width:540px) {
+    .footer-box {
+        width: 95%;
+        height: 1000px;
+    }
+
+    .top-box {
+        flex-direction: column;
+    }
+
+    .menu-footer-box {
+        width: 90%;
+        padding-top: 3.5rem;
+    }
+
+    #add-position-1 {
+        padding-right: 3rem;
+    }
+
+    #add-position-2 {
+        padding-right: 1.5rem;
+    }
+
+    #footer-footer {
+        padding-top: 12rem;
+    }
+
+    .second-link {
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width:450px) {
+    
+    .footer-box {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+
+    .top-box {
+        padding-top: 0;
+    }
+
+    .title-footer {
+        width: 100%;
+        text-align: center;
+    }
+
+    #add-position-1 {
+        padding: 0;
+    }
+
+    .second-link {
+        width: 100%;
+        text-align: center;
+    }
+
+    #add-position-2 {
+        padding: 0;
+    }
 }
