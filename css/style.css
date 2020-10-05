@@ -35,7 +35,7 @@ html {
 
 .header-title span {
     font-weight: bold;
-    font-size: 28px;
+    font-size: 45px;
     line-height: 29px;
 }
 
@@ -207,6 +207,8 @@ html {
     font-weight: bold;
     font-size: 50px;
     line-height: 49px;
+    position: relative;
+    z-index: 1;
 }
 
 .body-relation span {
@@ -465,19 +467,44 @@ html {
 }
 
 .title-section {
+    position: relative;
     display: flex;
     align-items: center;    
     margin-right: 8rem;    
     padding-bottom: 1rem;
     border-bottom: 3px solid transparent;
-    border-bottom-color: #1943EF;
+    border-bottom-color: rgba(25, 67, 239, 0.1); 
 }
-/* 
-.title-section:hover {
-    margin-bottom: 1rem;
-    border-radius: 3px;
-    
-}  */
+
+
+.title-section::after {
+    content: '';
+    width: 0%;
+    height: 4px;
+    background-color: #1943EF;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transition: all 500ms ease;
+    border-radius: 10px;
+
+}
+
+.title-section:hover {   
+    transition: all 500ms ease; 
+    border-bottom: 0;
+}
+
+.title-section span:hover {
+    color: #1943EF;
+}  
+
+.title-section:hover::after {
+    color: #1943EF;
+    left: 0%;
+    width: 100%;
+
+}  
 
 .background-icon {
     width: 35px;
@@ -529,9 +556,9 @@ html {
     margin-bottom: 1rem;
 }
 
-#overview-class {
+/* #overview-class {
     opacity: 1;
-}
+} */
 
 .opa-class {
     opacity: 0.4;
@@ -549,7 +576,6 @@ html {
     font-size: 16px;
     line-height: 11px;
     padding-left: 2rem;
-    padding-top: 0.5rem;
 }
 
 .icon-name-hover {
@@ -557,6 +583,29 @@ html {
     align-items: center;
     padding: 1rem 3rem 1rem 1rem;
     opacity: 0.4;
+    position: relative;
+}
+
+.icon-name-hover::after {
+    content: '';
+    width: 4px;
+    height: 0%;
+    background-color:  #1943EF;
+    left: -9.5%;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.icon-name-hover:hover::after {    
+    transition: all 500ms;
+    height: 50%;
+}
+
+.icon-name-hover:hover {
+    transition: all 500ms;
+    color: #1943EF;
+    opacity: 1;
+    fill: #1943EF;
 }
 
 .logout-list {
@@ -1672,13 +1721,13 @@ html {
     color: rgba(34, 34, 34, 0.6);
 }
 
-.icon-list {
+/* .icon-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 0.5rem;
 }
-
+ */
 .icon-container {
     display: flex;
     align-items: center;
