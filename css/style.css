@@ -586,6 +586,7 @@ html {
     position: relative;
 }
 
+
 .icon-name-hover::after {
     content: '';
     width: 4px;
@@ -608,6 +609,24 @@ html {
     fill: #1943EF;
 }
 
+.icon-name-hover .icon-list .path:hover {
+    fill: #1943EF;
+}
+
+.path1:hover {
+    fill: #1943EF;
+}
+
+.path2:hover {
+    fill: #1943EF;
+}
+
+.path3:hover {
+    fill: #1943EF;
+} 
+
+/*  DA SISTEMARE */
+
 .logout-list {
     z-index: 50;
     opacity: 0.4;
@@ -618,7 +637,7 @@ html {
 
 .background-footer {
     position: absolute;
-    width: 130px;
+    width: 160px;
     height: 50px;
     z-index: 33;
     background: #222222;
@@ -1721,13 +1740,13 @@ html {
     color: rgba(34, 34, 34, 0.6);
 }
 
-/* .icon-list {
+.icon-list-anx {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 0.5rem;
 }
- */
+ 
 .icon-container {
     display: flex;
     align-items: center;
@@ -1983,6 +2002,10 @@ html {
 
 @media screen and (max-width: 540px) {
 
+    .icon-list-anx {
+        flex-direction: column;
+    }
+
     .content-anxiety {        
         width: auto;
     }
@@ -2170,9 +2193,16 @@ html {
 .img-f2 img {
     position: relative;
     left: 10rem;
-    border: 1.5px solid #F5AC18;
-    border-radius: 50%;
 }
+
+.vector-img-f2 {
+    position: absolute;
+}
+
+.img-f1-right img {
+    position: relative;
+}
+
 
 .img-3 {
     display: flex;
