@@ -31,6 +31,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
+    position: relative;
 }
 
 .header-title span {
@@ -612,7 +613,7 @@ html {
 .icon-name-hover .icon-list .path:hover {
     fill: #1943EF;
 }
-
+/* 
 .path1:hover {
     fill: #1943EF;
 }
@@ -623,7 +624,7 @@ html {
 
 .path3:hover {
     fill: #1943EF;
-} 
+}  */
 
 /*  DA SISTEMARE */
 
@@ -641,8 +642,8 @@ html {
     height: 50px;
     z-index: 33;
     background: #222222;
-    opacity: 0.06;
-    border-radius: 5.54444px;
+    opacity: 0.10;
+    border-radius: 6px;
 }
 
 .icon-left-p {
@@ -937,6 +938,10 @@ html {
     .icon-name-hover {
         padding: 1rem;
     }
+
+    .icon-name-hover::after {
+        left: -5.5%;
+    }
     .container-button-time {
         width: 60%;
     }
@@ -1003,6 +1008,11 @@ html {
 
     .relationz-box {
         height: 1200px;
+    }
+
+    .background-footer {
+        width: 90px;
+        height: 30px;
     }
 
 
@@ -1400,6 +1410,15 @@ html {
     .container-descript {
         margin-bottom: 2.5rem;
     }
+
+    .line-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-description {
+        margin-bottom: 4rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1426,6 +1445,10 @@ html {
 }
 
 @media screen and (max-width: 540px) {
+    .reminder-right {
+        padding: 0rem;
+    }
+
     .reminder-box {
         height: 1200px;
     }
@@ -1705,6 +1728,7 @@ html {
     justify-content: space-between;
     padding: 1rem;
     position: relative;
+    width: 90%;
 }
 
 .title-big {
@@ -1724,7 +1748,6 @@ html {
 .title-left {
     display: flex;
     flex-direction: column;
-    padding-right: 9rem;
 }
 
 
@@ -2150,6 +2173,7 @@ html {
     align-items: center;
     background: #FFFFFF;
     border-radius: 8.31667px;
+    position: relative;
 }
 
 .name-img span {
@@ -2255,11 +2279,25 @@ html {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    right: 35rem;
+    right: -3rem;
 }
 
 
+@media screen and (max-width: 1440px) {
+    .svg-border-orange circle {
+        cx: 170;
+    }
+
+    .img-f2 img {
+        left: 7rem;
+    }
+}
+
 @media screen and (max-width: 1024px) {
+    .svg-border-orange circle {
+        cx: 125;
+    }
+
     .f2-img {
         left: 0;
     }
@@ -2272,9 +2310,6 @@ html {
         width: 200px;
     }
 
-    .points-gress-switch {
-        right: 10rem;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -2284,10 +2319,6 @@ html {
 
     .right-body {
         display: none;
-    }
-
-    .points-gress-switch {
-        right: 3rem;
     }
 }
 
@@ -2299,7 +2330,7 @@ html {
     }
 
     .points-gress-switch {
-        right: 1rem;
+        right: -1rem;
     }
 }
 
