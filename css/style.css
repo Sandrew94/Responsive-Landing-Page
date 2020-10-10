@@ -119,6 +119,9 @@ html {
         font-size: 12px;
     }
 
+    .header-title span {
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -542,8 +545,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 20%;/* 
-    height: 700px; */
+    width: 20%;
     border-radius: 40px 0 0 40px;
 }
 
@@ -556,10 +558,6 @@ html {
 .mainlist {
     margin-bottom: 1rem;
 }
-
-/* #overview-class {
-    opacity: 1;
-} */
 
 .opa-class {
     opacity: 0.4;
@@ -613,20 +611,6 @@ html {
 .icon-name-hover .icon-list .path:hover {
     fill: #1943EF;
 }
-/* 
-.path1:hover {
-    fill: #1943EF;
-}
-
-.path2:hover {
-    fill: #1943EF;
-}
-
-.path3:hover {
-    fill: #1943EF;
-}  */
-
-/*  DA SISTEMARE */
 
 .logout-list {
     z-index: 50;
@@ -644,6 +628,7 @@ html {
     background: #222222;
     opacity: 0.10;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .icon-left-p {
@@ -847,8 +832,6 @@ html {
     flex-direction: column;
     height: 100%;
     padding: 1.5rem;
-    position: relative;
-    z-index: 996; 
 }
 
 .title-person {
@@ -922,6 +905,14 @@ html {
     .img-green {
         margin: 15rem 3rem 0;
     }
+
+    .icon-name-hover::after {
+        left: -5.5%;
+    }
+
+    .person {
+        padding: 0.8rem;
+    }
 }
 
 
@@ -939,9 +930,6 @@ html {
         padding: 1rem;
     }
 
-    .icon-name-hover::after {
-        left: -5.5%;
-    }
     .container-button-time {
         width: 60%;
     }
@@ -1001,6 +989,10 @@ html {
         margin-left: 1rem;
     }
 
+    .logout-list {
+        padding: 2rem 2rem 4rem 1rem;
+    }
+
     
 }
 
@@ -1009,12 +1001,6 @@ html {
     .relationz-box {
         height: 1200px;
     }
-
-    .background-footer {
-        width: 90px;
-        height: 30px;
-    }
-
 
     .main-title {
         border-bottom: 0.693056px solid #EAEDF3;
@@ -1079,6 +1065,18 @@ html {
     .img-absolute {
         width: 85px;
         height: 85px;
+    }
+
+    .title-text {
+        font-size: 18px;
+    }
+
+    .title-section {
+        margin-right: 1rem;
+    }
+
+    .section-relactionz {
+        margin-left: 0rem;
     }
 }
 
@@ -1282,11 +1280,12 @@ html {
 
 .reminder-right {
     height: 600px;
+    padding-top: 6rem;
 }
 
 .reminder-description {
     position: relative;
-    padding: 1rem 3rem 1rem 2rem;
+    padding: 1rem 2.5rem 1rem 2rem;
     display: flex;
     align-items: center;
     border-radius: 16.6333px;
@@ -1419,6 +1418,10 @@ html {
     .list-description {
         margin-bottom: 4rem;
     }
+
+    .check-little {
+        padding-top: 0.3rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1544,6 +1547,7 @@ html {
 
 .remember-left {
     margin-bottom: 10%;
+    padding-top: 2rem;
 }
 
 #pad-3 {
@@ -1559,9 +1563,14 @@ html {
     flex-direction: column;
 }
 
+.remember-right {
+    border-radius: 20px;
+}
+
 .avatar-desc-cv {
     display: flex;
     align-items: center;
+    padding: 0.5rem;
 }
 
 .title-desc-cv {
